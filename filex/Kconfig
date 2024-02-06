@@ -1,0 +1,32 @@
+
+# Kconfig file for package filex
+menuconfig PKG_USING_FILEX
+    bool "filex file system in rtthread."
+    default n
+
+if PKG_USING_FILEX
+
+    config PKG_FILEX_PATH
+        string
+        default "/packages/system/filex"
+
+    choice
+        prompt "Version"
+        default PKG_USING_FILEX_LATEST_VERSION
+        help
+            Select the package version
+
+        config PKG_USING_FILEX_V100
+            bool "v1.0.0"
+
+        config PKG_USING_FILEX_LATEST_VERSION
+            bool "latest"
+    endchoice
+
+    config PKG_FILEX_VER
+       string
+       default "v1.0.0"    if PKG_USING_FILEX_V100
+       default "latest"    if PKG_USING_FILEX_LATEST_VERSION
+
+endif
+
