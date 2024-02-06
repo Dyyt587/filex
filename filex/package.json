@@ -1,7 +1,7 @@
 {
   "name": "filex",
-  "description": "Please add description of filex in English.",
-  "description_zh": "请添加软件包 filex 的中文描述。",
+  "description": "fiex in rttthread.",
+  "description_zh": "fiex 在rtthread 的移植。",
   "enable": "PKG_USING_FILEX",
   "keywords": [
     "filex"
@@ -25,7 +25,7 @@
     },
     {
       "version": "latest",
-      "URL": "https://github.com/Dyyt587/filex.git.git",
+      "URL": "https://github.com/Dyyt587/filex.git",
       "filename": "",
       "VER_SHA": "master"
     }
